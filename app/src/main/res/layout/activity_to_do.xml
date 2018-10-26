@@ -1,0 +1,192 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/btn3"
+        android:background="@drawable/magnitude_circle_2"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="enter your details"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#71BCFA"
+        android:padding="6dip" >
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="0.12"
+            android:text="@string/service_title"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ProgressBar
+            android:id="@+id/loadingProgressBar"
+            android:layout_width="28dp"
+            android:layout_height="28dp" />
+    </LinearLayout>
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#71BCFA"
+        android:padding="6dip"
+         android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/textNewToDo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/add_textbox_hint" > <requestFocus />
+        </EditText>
+         <EditText
+             android:id="@+id/textNewToDo1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:ems="10"
+             android:hint="@string/add_textbox_hint" > <requestFocus />
+         </EditText>
+         <EditText
+             android:id="@+id/textNewToDo2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:ems="10"
+             android:hint="@string/add_textbox_hint" > <requestFocus />
+         </EditText>
+         <EditText
+             android:id="@+id/textNewToDo3"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:ems="10"
+             android:hint="@string/add_textbox_hint" >
+
+            <requestFocus />
+       </EditText>
+
+        <Button
+            android:id="@+id/buttonAddToDo"
+            android:layout_width="64dip"
+            android:layout_height="wrap_content"
+            android:onClick="addItem"
+            android:text="@string/add_button_text" />
+
+
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Lcat"
+             android:id="@+id/button"
+             android:layout_centerVertical="true"
+             android:layout_centerHorizontal="true" />
+
+
+     </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewToDo"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        tools:listitem="@layout/row_list_to_do"
+        android:padding="6dip" >
+
+    </ListView>
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <ListView
+            android:id="@+id/list"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"/>
+
+        <TextView
+            android:id="@+id/empty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+        <ProgressBar
+            android:id="@+id/loading_indicator"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn1"
+                android:paddingRight="30dp"
+                android:paddingLeft="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/magnitude_circle_1"
+                android:text="START"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn2"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:paddingRight="30dp"
+                android:paddingLeft="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/magnitude_circle_1"
+                android:text="STOP" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
+

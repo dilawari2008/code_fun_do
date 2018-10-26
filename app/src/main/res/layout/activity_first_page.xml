@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="FirstPage"
+    android:padding="20dp"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:gravity="center_horizontal"
+        android:hint="Enter your name"
+        android:id="@+id/tv1"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:gravity="center_horizontal"
+        android:hint="Enter relative's phone number"
+        android:id="@+id/tv2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:layout_marginTop="30dp"
+        android:text="save"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btn1"/>
+
+</LinearLayout>
